@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 nav {
@@ -27,6 +28,11 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: seashell;
+}
+
+.logo-header {
+  font-family: "Goldman", sans-serif;
 }
 
 .nav-links {
@@ -48,11 +54,10 @@ nav {
   align-items: center;
   text-align: center;
   margin-right: 20px;
-  color: #000;
 }
 
 .fas {
-  color: #000;
+  color: seashell;
 }
 
 /* CSS */
@@ -71,7 +76,7 @@ nav {
 .card-title {
   text-align: center;
   padding: 10px;
-  font-family: "Playfair Display", serif;
+  font-family: "Goldman", serif;
 }
 
 .card-text {
@@ -83,7 +88,7 @@ nav {
   text-align: center;
   padding: 10px;
   font-family: "PT sans", serif;
-  color: #fff;
+  color: seashell;
 }
 
 .card-buttons {
@@ -119,7 +124,9 @@ nav {
 /* CSS */
 
 .footer {
-  background-color: #f8f9fa;
+  background-color: rgba(246, 246, 246, 0.388);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
   padding: 2rem 0;
 }
 
@@ -135,14 +142,6 @@ nav {
   height: 2rem;
   width: 2rem;
   margin: 0 0.5rem;
-}
-
-.col-sm-5 {
-  display: grid;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .row {
@@ -161,6 +160,18 @@ footer .row {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Goldman", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.social-icon svg {
+  fill: #fff;
+}
+
+.text {
+  color: seashell;
 }
 
 @media (max-width: 645px) {
@@ -170,5 +181,9 @@ footer .row {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .footer-header {
+    margin-top: 10px;
   }
 }
