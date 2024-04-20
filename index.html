@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="utilities.css" />
     <link rel="stylesheet" href="main.css" />
 
-    <script src="javascript.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,7 +41,10 @@
           <h1 class="logo-header">Ace Comp</h1>
         </div>
         <div class="cart">
-          <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#cart"
+            ><span id="cart-icon"><i class="fas fa-shopping-cart"></i></span
+          ></a>
+          <span class="number">0</span>
         </div>
       </nav>
     </header>
@@ -54,127 +55,181 @@
           <!-- Repeat this block for each card -->
           <div class="col-sm-4">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-1">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-2">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-3">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-4">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-5">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./images/Screenshot 2024-04-11 103218.png"
-                width="200"
-                height="200"
-                alt="image of computer"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Item Name</h3>
-                <p class="card-text">Example text.</p>
-                <h2 class="price">Price: $99.99</h2>
-                <div class="card-buttons">
-                  <button type="button" class="btn btn-primary">Buy Now</button>
-                  <button type="button" class="btn btn-secondary">
-                    Add to Cart
-                  </button>
+              <div class="item-6">
+                <img
+                  class="card-img-top"
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  width="200"
+                  height="200"
+                  alt="image of computer"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Item Name</h3>
+                  <p class="card-text">Example text.</p>
+                  <h2 class="price">Price: $99.99</h2>
+                  <div class="card-buttons">
+                    <button
+                      type="button"
+                      class="add-to-cart-button"
+                      data-item="item1"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- End of block -->
+        </div>
+
+        <div class="cartTab">
+          <h1 class="price">Shopping Cart</h1>
+          <div class="ListCart">
+            <div class="item">
+              <div class="image">
+                <img
+                  src="./images/Screenshot 2024-04-11 103218.png"
+                  alt="image of computer"
+                />
+                <div class="name">Item Name</div>
+                <div class="price">$99.99</div>
+                <div class="quantity">
+                  <span class="minus">></span>
+                  <span>1</span>
+                  <span class="plus"><</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkout">CHECK OUT</button>
+          </div>
         </div>
       </div>
     </main>
@@ -199,5 +254,6 @@
         </div>
       </div>
     </footer>
+    <script src="javascript.js"></script>
   </body>
 </html>
