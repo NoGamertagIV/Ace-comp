@@ -82,7 +82,7 @@ nav .cart {
 .card {
   background-color: #817f7fa3;
   border-radius: 10px;
-  margin: 20px 50px;
+  margin: 20px 55px;
 }
 
 .card-img-top {
@@ -143,13 +143,29 @@ button:active {
   background-color: grey;
   color: seashell;
   position: fixed;
-  inset: 0 0 0 auto;
+  inset: 0 -400 0 auto;
   z-index: 999;
   display: grid;
   grid-template-rows: 70px 1fr 70px;
+  transition: 0.5s;
+  display: none;
 }
 
-.cartTab .btn {
+body {
+  height: 100vh;
+}
+
+body.showCart .cartTab {
+  inset: 0 0 0 auto;
+  display: block;
+}
+
+body.showCart .container-2 .cartTab {
+  transform: translateX(-1em);
+
+}
+
+body.showCart .cartTab .btn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
@@ -180,10 +196,44 @@ button:active {
 
 .cartTab .ListCart .item {
   display: grid;
-  grid-template-columns: 70px 200px 50px 1fr;
+  grid-template-columns: 70px 150px 50px 1fr;
   gap: 10px;
   text-align: center;
   align-items: center;
+}
+
+.ListCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: seashell;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
+}
+
+.ListCart .quantity .num {
+  background: none;
+  color: seashell;
+}
+
+.ListCart .item:nth-child(odd) {
+  background-color: #000;
+}
+
+.ListCart .item:nth-child(even) .quantity {
+  color: #000;
+}
+
+.ListCart {
+  overflow: auto;
+}
+
+.ListCart::-webkit-scrollbar {
+  width: 0;
 }
 
 .col-sm-4 {
@@ -200,6 +250,7 @@ button:active {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 2rem 0;
+  margin-top: 4.6rem;
 }
 
 .container .row {

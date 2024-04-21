@@ -1,259 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="utilities.css" />
-    <link rel="stylesheet" href="main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="utilities.css" />
+  <link rel="stylesheet" href="main.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>Ace Comp</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <h1 class="logo-header">Ace Comp</h1>
-        </div>
-        <div class="cart">
-          <a href="#cart"
-            ><span id="cart-icon"><i class="fas fa-shopping-cart"></i></span
-          ></a>
-          <span class="number">0</span>
-        </div>
-      </nav>
-    </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet" />
 
-    <main>
-      <div class="container">
-        <div class="row">
-          <!-- Repeat this block for each card -->
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="item-1">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="item-2">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="item-3">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="item-4">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="item-5">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="item-6">
-                <img
-                  class="card-img-top"
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  width="200"
-                  height="200"
-                  alt="image of computer"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">Item Name</h3>
-                  <p class="card-text">Example text.</p>
-                  <h2 class="price">Price: $99.99</h2>
-                  <div class="card-buttons">
-                    <button
-                      type="button"
-                      class="add-to-cart-button"
-                      data-item="item1"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="javascript.js" defer></script>
+  <title>Ace Comp</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1 class="logo-header">Ace Comp</h1>
+      </div>
+      <div class="cart">
+        <a href="#cart"><span class="cart-icon"><i class="fas fa-shopping-cart"></i></span></a>
+        <span class="number">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <!-- Repeat this block for each card -->
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- End of block -->
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="item">
+              <img class="card-img-top" src="./images/Screenshot 2024-04-11 103218.png" width="200" height="200"
+                alt="image of computer" />
+              <div class="card-body">
+                <h3 class="card-title">Item Name</h3>
+                <p class="card-text">Example text.</p>
+                <h2 class="price">Price: $99.99</h2>
+                <div class="card-buttons">
+                  <button type="button" class="add-to-cart-button" data-item="item1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+        <!-- End of block -->
+      </div>
+      <div class="container-2">
         <div class="cartTab">
           <h1 class="price">Shopping Cart</h1>
           <div class="ListCart">
             <div class="item">
               <div class="image">
-                <img
-                  src="./images/Screenshot 2024-04-11 103218.png"
-                  alt="image of computer"
-                />
-                <div class="name">Item Name</div>
-                <div class="price">$99.99</div>
-                <div class="quantity">
-                  <span class="minus">></span>
-                  <span>1</span>
-                  <span class="plus"><</span>
+                <img src="./images/Screenshot 2024-04-11 103218.png" alt="image of computer" />
+              </div>
+              <div class="name">Item Name</div>
+              <div class="price">$99.99</div>
+              <div class="quantity">
+                <span class="minus">&lt;</span>
+                <span class="num">1</span>
+                <span class="plus">&gt;</span>
               </div>
             </div>
-          </div>
-          <div class="btn">
-            <button class="close">CLOSE</button>
-            <button class="checkout">CHECK OUT</button>
+            <div class="item">
+              <div class="image">
+                <img src="./images/Screenshot 2024-04-11 103218.png" alt="image of computer" />
+              </div>
+              <div class="name">Item Name</div>
+              <div class="price">$99.99</div>
+              <div class="quantity">
+                <span class="minus">&lt;</span>
+                <span class="num">1</span>
+                <span class="plus">&gt;</span>
+              </div>
+            </div>
+            <div class="btn">
+              <button class="close">CLOSE</button>
+              <button class="checkout">CHECK OUT</button>
+            </div>
+
           </div>
         </div>
       </div>
-    </main>
+  </main>
 
-    <!-- HTML -->
+  <!-- HTML -->
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5 col">
-            <h5 class="footer-header">Customize Me</h5>
-            <p class="text">
-              We offer a variety of customization options for you.
-            </p>
-            <p class="text">Contact us for more information!</p>
-          </div>
-          <div class="col-sm-6 col">
-            <h5 class="footer-header">Contact Us</h5>
-            <p class="text">Phone: (123) 456-7890</p>
-            <p class="text">Email: info@example.com</p>
-          </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col">
+          <h5 class="footer-header">Customize Me</h5>
+          <p class="text">
+            We offer a variety of customization options for you.
+          </p>
+          <p class="text">Contact us for more information!</p>
+        </div>
+        <div class="col-sm-6 col">
+          <h5 class="footer-header">Contact Us</h5>
+          <p class="text">Phone: (123) 456-7890</p>
+          <p class="text">Email: info@example.com</p>
         </div>
       </div>
-    </footer>
-    <script src="javascript.js"></script>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
